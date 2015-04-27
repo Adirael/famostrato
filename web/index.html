@@ -1,0 +1,110 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>FAMOSTRATO: personajes históricos de las calles de Madrid</title>
+    <meta name="description" content="Cuando vas de paseo por Madrid es inevitable observar la cantidad de personajes históricos que dan nombre a las calles y avenidas. Averigua con este mapa interactivo la vida (y obra) de cada uno de ellos.">
+    <meta name="author" content="Tecnil&oacute;gica DA">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v3/3.12/themes/css/cartodb.css" />
+    <link rel="stylesheet" href="stylesheets/styles.css">
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <meta name="twitter:card" content="summary_large_image"> 
+    <meta name="twitter:site" content="@tecnilogica"> 
+    <meta name="twitter:creator" content="@tecnilogica"> 
+    <meta name="twitter:title" content="FAMOSTRATO: personajes históricos de las calles de Madrid"> 
+    <meta name="twitter:description" content="Cuando vas de paseo por Madrid es inevitable observar la cantidad de personajes históricos que dan nombre a las calles y avenidas. Averigua con este mapa interactivo la vida (y obra) de cada uno de ellos."> 
+    <meta name="twitter:image" content="http://famostrato.cosas.tecnilogica.com/images/famostrato.png"> 
+
+    <meta property="og:title" content="FAMOSTRATO: personajes históricos de las calles de Madrid" /> 
+    <meta property="og:type" content="website" /> 
+    <meta property="og:url" content="http://famostrato.cosas.tecnilogica.com/" /> 
+    <meta property="og:image" content="http://famostrato.cosas.tecnilogica.com/images/famostrato.png" /> 
+    <meta property="og:description" content="Cuando vas de paseo por Madrid es inevitable observar la cantidad de personajes históricos que dan nombre a las calles y avenidas. Averigua con este mapa interactivo la vida (y obra) de cada uno de ellos." />
+
+</head>
+
+<body>
+    
+    <script> 
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ 
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), 
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) 
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga'); 
+
+        ga('create', 'UA-34916409-3', 'auto'); 
+        ga('send', 'pageview');
+    </script>
+
+    <header class="container top-padded">
+        <section class="header">
+            <div class="row">
+                <div class="logo-tecni col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <a href="http://tecnilogica.com" target="blank"><img src="images/logo-tecni.png"></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="title-bar-wrapper ">
+                    <div class="title-bar clearfix">
+                        <span class="title">Famostrato</span>
+                        <span class="description">Personajes históricos de las calles de Madrid</span>
+                    </div>
+                    <img class="tick" src="images/tick.png">
+                </div>
+            </div>
+        </section>
+    </header>
+    
+    <section class="map-section">
+            <section class="row map-and-legend">
+                <div id ="map" class="map col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+<!--                    <iframe width='100%' height='615' frameborder='0' src='http://tecnilogica.cartodb.com/viz/99ef5f18-9b3c-11e4-93a7-0e853d047bba/embed_map' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>-->
+                </div>
+        	</div>
+    </section>
+	
+    <section class="logos">
+        <div class="container">
+            <div class="row">
+                <a href="https://cartodb.com/" target="blank"><img  src="images/cartoDb-logo.jpg"></a>
+                <a href="https://wikipedia.es" target="blank"><img  src="images/wiki-logo.png" ></a>
+               <a href="https://www.openstreetmaps.com" target="blank"><img  src="images/osm-logo.jpg" ></a>
+                <!--div class="timeline-slider little-top-padded">10.12</div-->
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <h1 class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1">
+                <span>Famostrato </span>es un proyecto desarrollado por Tecnil&oacute;gica DA
+                </h1>
+            </div>
+            <div class="icons row">
+                <div class="col-lg-4 col-md-5 col-sm-4 col-xs-4 col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 address">Calle del General &Aacute;lvarez de Castro 26, 28010 Madrid</div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 phone">+34 913 994 789</div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 email"><a href="mailto:hola@tecnilogica.com?Subject=Hola" target="_top">hola@tecnilogica.com</a></div>  
+            </div>
+            <div class="hidden-footer">
+                <ul>
+                    <li class="address">Calle del General &Aacute;lvarez de Castro 26, 28010 Madrid</li>
+                    <li class="phone">+34 913 994 789</li>
+                    <li class="email"><a href="mailto:hola@tecnilogica.com?Subject=Hola" target="_top">hola@tecnilogica.com</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="line"></div>
+        <div class="container tecni-date">© 2015 Tecnil&oacute;gica DA</div>
+    </footer>
+    <script src="javascripts/jquery-1.11.0.min.js"></script>
+    <script src="javascripts/bootstrap.js"></script>
+    <script src="http://libs.cartocdn.com/cartodb.js/v3/3.12/cartodb.js"></script>
+	<script src="javascripts/application.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+@mixin respond-to-boot($media) {
+  @if $media == xs {
+    @media only screen and (max-width: $break-boot-xs) { @content; }
+  }
+  @if $media == xxs {
+    @media only screen and (max-width: $break-boot-xxs) { @content; }
+  }
+  @if $media == xxxs {
+    @media only screen and (max-width: $break-boot-xxxs) { @content; }
+  }
+  @if $media == xxxxs {
+    @media only screen and (max-width: $break-boot-xxxxs) { @content; }
+  }
+  @else if $media == sm {
+    @media only screen and (min-width: $break-boot-sm) and (max-width: $break-boot-sm-2) { @content; }
+  }
+  @else if $media == md {
+    @media only screen and (min-width: $break-boot-md)  and (max-width: $break-boot-lg) { @content; }
+  }
+  @else if $media == lg {
+    @media only screen and (min-width: $break-boot-lg-2) { @content; }
+  }
+  @else if $media == md-and-less {
+    @media only screen and (max-width: $break-boot-lg) { @content; }
+  }
+}

@@ -1,0 +1,271 @@
+@import "bootstrap-compass";
+@import "bootstrap-variables";
+@import "bootstrap";
+@import "_variables";
+@import "_typography";
+@import "_personal_mixins";
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:    border-box;
+    box-sizing:         border-box;
+}
+
+body{
+    font-family:Open-Sans;
+    overflow-x:hidden;
+}
+//HEADER
+.top-padded{
+    padding-top:2vw;
+	padding-bottom: 1vw;
+}
+.little-top-padded{
+    padding-top:0.5vw;
+}
+.logo-tecni{
+    margin-bottom:1.5vw;
+    
+    img {
+        height:4.5vw;
+         @include respond-to-boot(md-and-less) { height: 4vw;}
+    }   
+}
+.title-bar-wrapper{
+    background-color: #2c7bb6;
+    height: 52px;
+    @include respond-to-boot(md-and-less) { height: 43px;}
+    @include respond-to-boot(sm) { height: 38px;}
+    @include respond-to-boot(xs) { height: 30px;}
+    @include respond-to-boot(xxxs) { height: 20px;}
+    position:relative;
+    
+    .thermometer{
+        position:absolute;
+        top: -32px;
+        left: 97.5%;
+        height:108px;
+        @include respond-to-boot(md-and-less) { height: 7vw; top: -18px; height:80px;}
+        @include respond-to-boot(xs) { left: 97%; top: -12px;height:55px;}
+        @include respond-to-boot(xxs) { top: -12px; height:70px;}
+        @include respond-to-boot(sm) { top: -16px; height:70px;}
+        @include respond-to-boot(xxxs) { top: -4px; height:30px;}
+    }
+    .tick{
+        position:absolute;
+        left: 1%;
+        top: 80%;
+        height: 20%;
+    }
+} 
+
+.title-bar{  
+    position:absolute; 
+    display:table;
+    width: 100%;
+    height: 100%;
+    color:white;
+    font-size:2.5em;
+    @include respond-to-boot(md) { font-size: 2em;}
+    @include respond-to-boot(sm) { font-size: 1.8em;}
+    @include respond-to-boot(xs) { font-size: 1.6em;}
+    @include respond-to-boot(xxxs) { font-size: 0.9em;}
+    
+    .title{
+        margin-left:3.5vw;
+        float: left;
+    }
+    .description{
+        font-family:Open-Sans-Light;
+        margin-right:3vw;
+        @include respond-to-boot(xs) { margin-right: 4vw;}
+        float: right;
+    }
+}
+
+.description-text{
+
+    @include respond-to-boot(md) { font-size: 1.2em;}
+    @include respond-to-boot(sm) { font-size: 1.1em;}
+    @include respond-to-boot(xs) { font-size: 1em;}
+    font-size:1.5em;
+    font-family:Open-Sans-Light;
+    margin: 0 auto;
+    margin-top:1.8vw;
+    width:98%;
+    margin-bottom:1.8vw;
+}
+//MAP SECTION
+.map-section {
+    background-color:#eeeeee;
+    @include respond-to-boot(xs) { background-color:white; }
+}
+.map-and-legend{
+    height:615px;
+	padding-top: 5px;
+    @include respond-to-boot(md) { height:500px; }
+    @include respond-to-boot(sm) { height:475px; }
+    @include respond-to-boot(xs) { height: 450px; }
+    @include respond-to-boot(xxs) { height: 425px; }
+    @include respond-to-boot(xxxs) { height: 400px; }
+    @include respond-to-boot(xxxxs) { height:375px;}
+    .map{
+        padding:0 !important;
+		height: 615px;
+		@include respond-to-boot(md) { height:500px; }
+		@include respond-to-boot(sm) { height:475px; }
+		@include respond-to-boot(xs) { height: 450px; }
+		@include respond-to-boot(xxs) { height: 425px; }
+		@include respond-to-boot(xxxs) { height: 400px; }
+		@include respond-to-boot(xxxxs) { height:375px;}
+        img{
+            width:100%;
+        }
+    }
+        .table-of-contents{
+            padding-top:25%;
+            padding-left:15%;
+            padding-right:15%;
+            width:100%;
+            display:table;
+            .table-row{
+                display:table-row;
+                padding-top:10px;
+                padding-bottom:10px;
+                img{
+                    height:100%;
+                }
+                span{
+                    float:right;
+                    font-size:1.8em;
+                }
+            }
+        }
+}
+//LOGOS SECTION
+.logos {
+    padding: 1vw 0;
+    color: $tecni-color;
+	background-color: white;
+    font-size: 2.6em;
+    @include respond-to-boot(md) {font-size:2em;}
+    @include respond-to-boot(sm) {font-size:1.5em;}
+    @include respond-to-boot(xs) {font-size:1.4em;}
+    @include respond-to-boot(xxxs) {font-size:1em;}
+    @include respond-to-boot(xxxxs) {font-size:0.8em;}
+	.container{
+		.row{
+			text-align:center;
+			a{ 
+				img{
+					height: 50px;
+					@include respond-to-boot(xs) {height:30px}
+					@include respond-to-boot(xxxs) {height:28px}
+					@include respond-to-boot(xxxxs) {height:25px}
+				}
+			}
+		}
+	}
+}
+
+.timeline-slider{
+
+    .animate  {
+        float: right;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        border: 1.5px solid #fff;
+        text-align: center;
+        background-image: url("../images/video-icon-stop.jpg");
+        background-size: 42px 42px;
+        box-shadow: 0 0 0 3px #002525;
+        cursor: pointer;
+        cursor: hand;
+        @include respond-to-boot(md) {background-size: 32px 32px; height:35px; width:35px}
+        @include respond-to-boot(sm) {background-size: 22px 22px; height:25px; width:25px}
+        @include respond-to-boot(xs) {background-size: 12px 12px; height:15px; width:15px}
+        @include respond-to-boot(xxxs) {background-size: 6px 6px; height:9px; width:9px}
+        @include respond-to-boot(xxxxs) {background-size: 5px 5px; height:8px; width:8px}
+    }
+}
+
+//FOOTER
+footer{
+    position:relative;
+    background-color: $dark-grey;
+    color:#747474;
+    font-family:Open-Sans-Light;
+    font-size: 1em;
+    @include respond-to-boot(sm) {font-size:0.8em;}
+    @include respond-to-boot(xs) {font-size:0.8em;}
+    padding-bottom:3vw;
+    .container{
+        padding-top:3vw;
+        padding-bottom:3vw;
+    }
+    .icons{
+        @include respond-to-boot(xxxxs) {display:none;}
+    }
+    .hidden-footer{
+        display:none;
+        @include respond-to-boot(xxxxs) {display:block;}
+        ul{
+            list-style: none;
+        }
+    }
+    h1{
+        padding:0.5vw;
+        font-size: 1em;
+        border-left: 1px dotted $tecni-color;
+        span{
+           color:white;   
+        }
+    }
+    .address{
+        background-image: url('../images/address-icon.jpg');
+        background-repeat:no-repeat;
+        padding-left:20px;
+        padding-top:5px;
+        height:25px;
+    }
+    .phone{
+        background-image: url('../images/telephone-icon.jpg');
+        background-repeat:no-repeat;
+        height:25px;
+        padding-top:5px;
+        padding-left:20px;
+    }
+    .email{
+        background-image: url('../images/email-icon.jpg');
+        background-repeat:no-repeat;
+        height:25px;
+        padding-top:5px;
+        padding-left:20px;
+    }
+    .line{
+        height:2px;
+        border-top:1px solid #333333;
+        border-bottom:1px solid #666666;
+        width:100%;
+        @include respond-to-boot(xxxxs) {display:none;}
+    }
+    .tecni-date {
+        padding: 1vw;
+    }
+    .scrollup {
+        width: 4vw;
+        height: 4vw;
+        opacity: 0.9;
+        position: absolute;
+        bottom: 5vw;
+        @include respond-to-boot(md) { bottom: 65px;}
+        right: 40px;
+        text-indent: -9999px;
+        cursor: pointer;
+        cursor: hand;
+        background: url(../images/icon_top.png) no-repeat center center #999;
+        background-size: 2.5vw 2.5vw;
+        z-index: 999999;
+    }
+}
